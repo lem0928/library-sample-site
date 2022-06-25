@@ -1,0 +1,423 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 4.209rem;
+  letter-spacing: 5px;
+  font-family: "EB Garamond", serif;
+}
+h2 {
+  font-size: 3.157rem;
+}
+h3 {
+  font-size: 2.369rem;
+}
+h4 {
+  font-size: 1.777rem;
+}
+h5 {
+  font-size: 1.333rem;
+}
+p {
+  font-size: 1.125rem;
+  color: #617762;
+  line-height: 1.5;
+  background-color: #dfe0df;
+  border-radius: 10px;
+  margin: 0.5rem 1rem;
+}
+
+#home-page {
+  background-image: url("images/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 8rem;
+}
+
+.title-text {
+  text-align: center;
+  font-weight: 300;
+}
+
+.subtitle-text {
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 12px;
+}
+
+a {
+  margin: 0 auto;
+}
+
+.btn-home {
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: white;
+  width: 300px;
+  cursor: pointer;
+  font-size: 1.777rem;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.btn-home:hover {
+  background-color: white;
+  color: #a35200;
+}
+
+@media (max-width: 1080px) {
+  .title-text {
+    font-size: 4.209rem;
+  }
+}
+@media (max-width: 768px) {
+  #home-page {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 480px) {
+  #home-page {
+    padding: 0 1.5rem;
+  }
+  .title-text {
+    font-size: 3.157rem;
+  }
+}
+@media (max-width: 400px) {
+  .title-text {
+    font-size: 3.157rem;
+  }
+  .subtitle-text {
+    font-size: 1.333rem;
+  }
+}
+
+#main-page {
+  background-color: #dfe0df;
+  padding: 0 8rem;
+}
+
+.main-container {
+  background-color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+}
+
+.main-header {
+  font-weight: 600;
+  color: #552a00;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+/* SELECTION ONE */
+.selection-one {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.service-offered {
+  grid-column: 1 / span 5;
+}
+
+.text-area-left {
+  grid-column: 1 / span 3;
+}
+
+.right-image {
+  grid-column: 4 / span 2;
+}
+
+.right-image img {
+  width: 100%;
+}
+/* SELECTION TWO */
+.selection-two {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+  padding: 0 1rem;
+}
+
+.service-offered {
+  grid-column: 1 / span 5;
+}
+
+.selection-two .service-offered h2 {
+  text-align: end;
+}
+
+.left-image {
+  grid-column: 1 / span 2;
+}
+
+.left-image img {
+  width: 100%;
+}
+
+.text-area-right {
+  grid-column: 3 / span 3;
+}
+
+/* ACTUAL STYLING */
+.service-offered h2 {
+  color: #007561;
+  letter-spacing: -2px;
+}
+
+.text-area-left,
+.text-area-right {
+  background-color: #dfe0df;
+  border-radius: 10px;
+}
+
+.right-image img,
+.left-image img {
+  border-radius: 10px;
+}
+
+.features {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.features div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features div img {
+  margin: 0 auto;
+}
+
+.features h5 {
+  color: #a35200;
+}
+
+.features p {
+  background-color: transparent;
+}
+
+.testimonials {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #087f5b;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 5rem 2rem 0 2rem;
+}
+
+.testimonials img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: scale(1.2);
+  grid-column: 1 / 3;
+  margin: 0 auto;
+}
+
+.testimonials div {
+  grid-column: 3 / 6;
+}
+
+.quote {
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.btn {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border-style: none;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  cursor: pointer;
+}
+
+.btn-left {
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.author-name {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+}
+
+.author-job {
+  background-color: transparent;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #087f5b;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-text h5 {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+svg {
+  width: auto;
+  height: 25px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  #main-page {
+    padding: 0 2rem;
+  }
+  .main-header {
+    font-size: 3.157rem;
+  }
+  .service-offered h2 {
+    font-size: 2.369rem;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+  .testimonials {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .testimonials img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: scale(1.2);
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    margin: 0 auto;
+  }
+
+  .testimonials div {
+    grid-column: 1 / span 1;
+    grid-row: 3 / 6;
+  }
+
+  .quote,
+  .author-name,
+  .author-job {
+    text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  p {
+    background-color: transparent;
+  }
+
+  #main-page {
+    padding: 0 1rem;
+  }
+
+  .main-header {
+    font-size: 2.369rem;
+  }
+
+  .service-offered h2,
+  .selection-two .service-offered h2 {
+    font-size: 1.777rem;
+    text-align: center;
+  }
+
+  /* selection-one */
+  .text-area-left {
+    grid-column: 1 / span 5;
+  }
+  .right-image {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 5;
+  }
+  /* selection-two */
+
+  .text-area-right {
+    grid-column: 1 / span 5;
+  }
+  .left-image {
+    grid-column: 1 / span 5;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #main-page {
+    padding: 0 0.5rem;
+  }
+}
