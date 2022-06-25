@@ -81,6 +81,11 @@ a {
   color: #a35200;
 }
 
+.btn-home:active {
+  background-color: transparent;
+  color: white;
+}
+
 @media (max-width: 1080px) {
   .title-text {
     font-size: 4.209rem;
